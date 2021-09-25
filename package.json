@@ -1,0 +1,54 @@
+{
+  "name": "card-match-game",
+  "version": "0.1.0",
+  "homepage": "https://kaz-yamada.github.io/Card-Match-Game",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "gh-pages": "^3.2.0",
+    "jss-plugin-global": "^10.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-jss": "^10.6.0",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^26.0.23",
+    "coveralls": "^3.1.0",
+    "jscoverage": "^0.6.0",
+    "msw": "^0.29.0",
+    "nodeunit": "^0.11.3",
+    "react-test-renderer": "^17.0.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --env=jsdom  --coverage --watchAll",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
+}
